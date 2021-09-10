@@ -18,31 +18,55 @@ body {
 }
 /* container styles */
 .container {
-  width: 600px;
+  /* width: 600px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-/* small screen */
+/* Small */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-/* medium screen */
+/* Medium */
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
-/* large screen */
-@media (min-width: 1200x) {
+/* Large */
+@media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
 /* end global rules */
+/* start special  */
+.special {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special {
+    font-size: 60px;
+  }
+  .special + p {
+    margin: -20px;
+  }
+}
+/* end special  */
 /* header start */
 .header {
   padding: 20px;
@@ -76,7 +100,7 @@ body {
   width: 100%;
 }
 .header .links .icon span:nth-child(2) {
-  width: 70%;
+  width: 60%;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -133,30 +157,6 @@ body {
   border-bottom: 1px solid #ddd;
 }
 /* header end */
-/* start special  */
-.special {
-  text-align: center;
-  font-size: 100px;
-  color: #ebeecd;
-  font-weight: 800;
-  letter-spacing: -2px;
-  margin: 0;
-}
-.special + p {
-  margin: -30px 0 0;
-  text-align: center;
-  font-size: 20px;
-  color: #797979;
-}
-@media (max-width: 767px) {
-  .special {
-    font-size: 60px;
-  }
-  .special + p {
-    margin: -20px;
-  }
-}
-/* end special  */
 /* start landing section */
 .landing {
   background-image: url(../images/zza-1920x1080.jpg);
@@ -200,7 +200,7 @@ body {
   grid-gap: 20px;
 }
 .feature .container .feat {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 .feature .feat i {
@@ -302,7 +302,7 @@ body {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
 }
-.about-content {
+.about .about-content {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -359,6 +359,17 @@ body {
 .about-content .text p:last-of-type {
   line-height: 2;
   color: #777;
+}
+@media (max-width: 991px) {
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /* end about */
 /* start contact */
