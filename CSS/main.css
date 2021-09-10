@@ -18,11 +18,11 @@ body {
 }
 /* container styles */
 .container {
-  /* width: 600px; 
+  /* width: 600px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;*/
+  margin-right: auto;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -117,7 +117,7 @@ body {
   background-color: var(--section-background);
   position: absolute;
   right: 0;
-  min-height: 200px;
+  min-width: 200px;
   top: calc(100% + 15px);
   display: none;
   transition: 0.5s;
